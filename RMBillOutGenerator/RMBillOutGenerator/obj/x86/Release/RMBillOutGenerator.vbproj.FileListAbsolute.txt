@@ -1,0 +1,74 @@
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.pdb
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.xml
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\Interop.ADODB.dll
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\Interop.ADOR.dll
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form1.resources
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Resources.resources
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\receipt.mdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\MySql.Data.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Release\ADODB.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form1.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form2.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Resources.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.TrustInfo.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\receipt.mdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\MySql.Data.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\bin\Release\ADODB.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form1.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form2.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Resources.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.TrustInfo.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program v2\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\receipt.mdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\footer.spl
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\header.spl
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\MySql.Data.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\bin\Release\ADODB.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form1.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form2.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Resources.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.TrustInfo.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb

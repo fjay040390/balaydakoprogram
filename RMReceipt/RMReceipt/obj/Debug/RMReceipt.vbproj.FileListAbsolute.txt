@@ -1,0 +1,30 @@
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\bin\Debug\ADODB.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\bin\Debug\MySql.Data.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\bin\Debug\App.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\bin\Debug\RMReprint.exe.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\bin\Debug\RMReprint.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\bin\Debug\RMReprint.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\bin\Debug\RMReprint.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReceipt.vbproj.ResolveComReference.cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReprint.Form1.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReprint.Form2.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReprint.Resources.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReceipt.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReprint.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReprint.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMReceipt\RMReceipt\obj\Debug\RMReprint.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\bin\Debug\ADODB.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\bin\Debug\MySql.Data.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\bin\Debug\App.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\bin\Debug\RMReceipt.exe.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\bin\Debug\RMReceipt.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\bin\Debug\RMReceipt.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\bin\Debug\RMReceipt.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.vbproj.ResolveComReference.cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.Form1.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.Form2.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.Resources.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMReceipt\RMReceipt\obj\Debug\RMReceipt.pdb

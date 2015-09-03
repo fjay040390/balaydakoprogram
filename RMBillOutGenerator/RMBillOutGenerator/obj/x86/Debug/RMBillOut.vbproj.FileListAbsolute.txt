@@ -1,0 +1,9 @@
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\bin\Debug\RMBillOut.exe
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\bin\Debug\RMBillOut.pdb
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\bin\Debug\RMBillOut.xml
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\obj\x86\Debug\RMBillOut.Form1.resources
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\obj\x86\Debug\RMBillOut.Resources.resources
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\obj\x86\Debug\RMBillOut.exe
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\obj\x86\Debug\RMBillOut.xml
+C:\Documents and Settings\randz\Local Settings\Application Data\Temporary Projects\RMBillOut\obj\x86\Debug\RMBillOut.pdb

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="datasetRMSenior" targetNamespace="http://tempuri.org/datasetRMSenior.xsd" xmlns:mstns="http://tempuri.org/datasetRMSenior.xsd" xmlns="http://tempuri.org/datasetRMSenior.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="datasetRMSenior" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="datasetRMSenior" msprop:Generator_UserDSName="datasetRMSenior">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblORDetail" msprop:Generator_TableClassName="tblORDetailDataTable" msprop:Generator_TableVarName="tabletblORDetail" msprop:Generator_RowChangedName="tblORDetailRowChanged" msprop:Generator_TablePropName="tblORDetail" msprop:Generator_RowDeletingName="tblORDetailRowDeleting" msprop:Generator_RowChangingName="tblORDetailRowChanging" msprop:Generator_RowEvHandlerName="tblORDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="tblORDetailRowDeleted" msprop:Generator_RowClassName="tblORDetailRow" msprop:Generator_UserTableName="tblORDetail" msprop:Generator_RowEvArgName="tblORDetailRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="or_no" msprop:Generator_ColumnVarNameInTable="columnor_no" msprop:Generator_ColumnPropNameInRow="or_no" msprop:Generator_ColumnPropNameInTable="or_noColumn" msprop:Generator_UserColumnName="or_no" type="xs:string" minOccurs="0" />
+              <xs:element name="or_date" msprop:Generator_ColumnVarNameInTable="columnor_date" msprop:Generator_ColumnPropNameInRow="or_date" msprop:Generator_ColumnPropNameInTable="or_dateColumn" msprop:Generator_UserColumnName="or_date" type="xs:string" minOccurs="0" />
+              <xs:element name="senior_id" msprop:Generator_ColumnVarNameInTable="columnsenior_id" msprop:Generator_ColumnPropNameInRow="senior_id" msprop:Generator_ColumnPropNameInTable="senior_idColumn" msprop:Generator_UserColumnName="senior_id" type="xs:string" minOccurs="0" />
+              <xs:element name="senior_name" msprop:Generator_ColumnVarNameInTable="columnsenior_name" msprop:Generator_ColumnPropNameInRow="senior_name" msprop:Generator_ColumnPropNameInTable="senior_nameColumn" msprop:Generator_UserColumnName="senior_name" type="xs:string" minOccurs="0" />
+              <xs:element name="senior_amount" msprop:Generator_ColumnVarNameInTable="columnsenior_amount" msprop:Generator_ColumnPropNameInRow="senior_amount" msprop:Generator_ColumnPropNameInTable="senior_amountColumn" msprop:Generator_UserColumnName="senior_amount" type="xs:string" minOccurs="0" />
+              <xs:element name="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnPropNameInTable="discountColumn" msprop:Generator_UserColumnName="discount" type="xs:string" minOccurs="0" />
+              <xs:element name="emp_name" msprop:Generator_ColumnVarNameInTable="columnemp_name" msprop:Generator_ColumnPropNameInRow="emp_name" msprop:Generator_ColumnPropNameInTable="emp_nameColumn" msprop:Generator_UserColumnName="emp_name" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblORSummary" msprop:Generator_TableClassName="tblORSummaryDataTable" msprop:Generator_TableVarName="tabletblORSummary" msprop:Generator_RowChangedName="tblORSummaryRowChanged" msprop:Generator_TablePropName="tblORSummary" msprop:Generator_RowDeletingName="tblORSummaryRowDeleting" msprop:Generator_RowChangingName="tblORSummaryRowChanging" msprop:Generator_RowEvHandlerName="tblORSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="tblORSummaryRowDeleted" msprop:Generator_RowClassName="tblORSummaryRow" msprop:Generator_UserTableName="tblORSummary" msprop:Generator_RowEvArgName="tblORSummaryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="countOR" msprop:Generator_ColumnVarNameInTable="columncountOR" msprop:Generator_ColumnPropNameInRow="countOR" msprop:Generator_ColumnPropNameInTable="countORColumn" msprop:Generator_UserColumnName="countOR" type="xs:string" minOccurs="0" />
+              <xs:element name="seniorTotal" msprop:Generator_ColumnVarNameInTable="columnseniorTotal" msprop:Generator_ColumnPropNameInRow="seniorTotal" msprop:Generator_ColumnPropNameInTable="seniorTotalColumn" msprop:Generator_UserColumnName="seniorTotal" type="xs:string" minOccurs="0" />
+              <xs:element name="discountTotal" msprop:Generator_ColumnVarNameInTable="columndiscountTotal" msprop:Generator_ColumnPropNameInRow="discountTotal" msprop:Generator_ColumnPropNameInTable="discountTotalColumn" msprop:Generator_UserColumnName="discountTotal" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="tblOrItems" msprop:Generator_TableClassName="tblOrItemsDataTable" msprop:Generator_TableVarName="tabletblOrItems" msprop:Generator_RowChangedName="tblOrItemsRowChanged" msprop:Generator_TablePropName="tblOrItems" msprop:Generator_RowDeletingName="tblOrItemsRowDeleting" msprop:Generator_RowChangingName="tblOrItemsRowChanging" msprop:Generator_RowEvHandlerName="tblOrItemsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblOrItemsRowDeleted" msprop:Generator_RowClassName="tblOrItemsRow" msprop:Generator_UserTableName="tblOrItems" msprop:Generator_RowEvArgName="tblOrItemsRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="or_no" msprop:Generator_ColumnVarNameInTable="columnor_no" msprop:Generator_ColumnPropNameInRow="or_no" msprop:Generator_ColumnPropNameInTable="or_noColumn" msprop:Generator_UserColumnName="or_no" type="xs:string" minOccurs="0" />
+              <xs:element name="item_desc" msprop:Generator_ColumnVarNameInTable="columnitem_desc" msprop:Generator_ColumnPropNameInRow="item_desc" msprop:Generator_ColumnPropNameInTable="item_descColumn" msprop:Generator_UserColumnName="item_desc" type="xs:string" minOccurs="0" />
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:string" minOccurs="0" />
+              <xs:element name="raw_price" msprop:Generator_ColumnVarNameInTable="columnraw_price" msprop:Generator_ColumnPropNameInRow="raw_price" msprop:Generator_ColumnPropNameInTable="raw_priceColumn" msprop:Generator_UserColumnName="raw_price" type="xs:string" minOccurs="0" />
+              <xs:element name="less_vat" msprop:Generator_ColumnVarNameInTable="columnless_vat" msprop:Generator_ColumnPropNameInRow="less_vat" msprop:Generator_ColumnPropNameInTable="less_vatColumn" msprop:Generator_UserColumnName="less_vat" type="xs:string" minOccurs="0" />
+              <xs:element name="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnPropNameInTable="discountColumn" msprop:Generator_UserColumnName="discount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

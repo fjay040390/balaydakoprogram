@@ -1,0 +1,33 @@
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\bin\Debug\repORSummary.rdlc
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\bin\Debug\repORItems.rdlc
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.exe.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.frmCalendar.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.frmReport.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.Resources.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RdlCompile.cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RdlCompile.compiled
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\repORSummary.rdlc
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\repORItems.rdlc
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.exe.config
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\RMSeniorReports.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\bin\Debug\MySql.Data.dll
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.frmCalendar.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.frmReport.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.Resources.resources
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RdlCompile.cache
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RdlCompile.compiled
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.xml
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMSeniorReports\RMSeniorReports\obj\Debug\RMSeniorReports.pdb
