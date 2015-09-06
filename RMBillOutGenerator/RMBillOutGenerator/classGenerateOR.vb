@@ -119,17 +119,17 @@ Public Class classGenerateOR
         sqlCmd.Parameters("@tableNo").Direction = ParameterDirection.Output
         sqlCmd.Parameters.Add("@custCount", MySqlDbType.Int16)
         sqlCmd.Parameters("@custCount").Direction = ParameterDirection.Output
-        sqlCmd.Parameters.Add("@id", MySqlDbType.String)
-        sqlCmd.Parameters("@id").Direction = ParameterDirection.Output
-        sqlCmd.Parameters.Add("@cName", MySqlDbType.String)
-        sqlCmd.Parameters("@cName").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@seniorID", MySqlDbType.String)
+        sqlCmd.Parameters("@seniorID").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@seniorName", MySqlDbType.String)
+        sqlCmd.Parameters("@seniorName").Direction = ParameterDirection.Output
         sqlCmd.ExecuteNonQuery()
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         Cashier = sqlCmd.Parameters("@empName").Value.ToString
         TableNo = sqlCmd.Parameters("@tableNo").Value.ToString
         CustNo = sqlCmd.Parameters("@custCount").Value.ToString
-        SeniorID = sqlCmd.Parameters("@id").Value.ToString
-        SeniorName = sqlCmd.Parameters("@cName").Value.ToString
+        SeniorID = sqlCmd.Parameters("@seniorID").Value.ToString
+        SeniorName = sqlCmd.Parameters("@seniorName").Value.ToString
     End Sub
 
     Protected Sub PrintBillOut()
@@ -184,9 +184,9 @@ Public Class classGenerateOR
                     'Sub Total Pre Tax
                     sPreTax = subTotal - vat
                     'Senior Count
-                    seniorCount = sqlDR("count").ToString
+                    seniorCount = sqlDR("senior_count").ToString
                     'Senior Amount
-                    seniorAmount = sqlDR("amount").ToString
+                    seniorAmount = sqlDR("senior_amount").ToString
                     'Senior Discount
                     seniorDiscount = sqlDR("discount").ToString
                     'Service Charge
