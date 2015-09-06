@@ -72,3 +72,25 @@ C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service C
 C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
 C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
 C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program Service Charge Without Tax\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.config
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\receipt.mdb
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\footer.spl
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\header.spl
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\MySql.Data.dll
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\bin\Release\ADODB.dll
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form1.resources
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form2.resources
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOut.Resources.resources
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.GenerateResource.Cache
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.TrustInfo.xml
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe.manifest
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.application
