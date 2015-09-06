@@ -111,11 +111,11 @@ Partial Class Form2
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(361, 13)
+        Me.Label5.Location = New System.Drawing.Point(327, 13)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(114, 20)
+        Me.Label5.Size = New System.Drawing.Size(183, 20)
         Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Table Details"
+        Me.Label5.Text = "Table Details (Senior)"
         '
         'Panel2
         '
@@ -467,11 +467,11 @@ Partial Class Form2
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(23, 14)
+        Me.Label12.Location = New System.Drawing.Point(47, 13)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(108, 20)
+        Me.Label12.Size = New System.Drawing.Size(62, 20)
         Me.Label12.TabIndex = 25
-        Me.Label12.Text = "Senior Details"
+        Me.Label12.Text = "Details:"
         '
         'Label11
         '

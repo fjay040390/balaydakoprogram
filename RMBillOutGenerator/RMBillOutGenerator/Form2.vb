@@ -61,14 +61,10 @@ Public Class Form2
                 ConnectToServer()
                 'Delete all existing items at database by OR
                 DeleteItemData(lblBillNo.Text)
-                'Delete all existing payments at database by OR
-                'DeleteORPayments(lblBillNo.Text)
                 'Insert OR summary to database 
                 InsertSummaryData()
                 'Insert OR items to database 
                 LoadItemDataFromPOS(lblBillNo.Text)
-                'Insert OR payments to database 
-                'LoadPaymentDataFromPOS(lblBillNo.Text)
                 'Change Status bar
                 SetStatusText("Printing...", Color.White)
                 'Print Bill Out
@@ -185,14 +181,14 @@ Public Class Form2
         sqlCmd.Parameters.AddWithValue("@custCount", lblCustNo.Text)
         sqlCmd.Parameters("@custCount").Direction = ParameterDirection.Input
         'Senior Count
-        sqlCmd.Parameters.AddWithValue("@seniorCount", txtSCcount.Text)
-        sqlCmd.Parameters("@seniorCount").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@count", txtSCcount.Text)
+        sqlCmd.Parameters("@count").Direction = ParameterDirection.Input
         'Senior ID
-        sqlCmd.Parameters.AddWithValue("@seniorID", txtSCid.Text)
-        sqlCmd.Parameters("@seniorID").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@id", txtSCid.Text)
+        sqlCmd.Parameters("@id").Direction = ParameterDirection.Input
         'Senior Name
-        sqlCmd.Parameters.AddWithValue("@seniorName", txtSCname.Text)
-        sqlCmd.Parameters("@seniorName").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@cName", txtSCname.Text)
+        sqlCmd.Parameters("@cName").Direction = ParameterDirection.Input
         'Transaction Gross
         sqlCmd.Parameters.AddWithValue("@transGross", CDbl(lblGross.Text))
         sqlCmd.Parameters("@transGross").Direction = ParameterDirection.Input
@@ -204,8 +200,8 @@ Public Class Form2
         End If
         sqlCmd.Parameters("@vat").Direction = ParameterDirection.Input
         'Senior Amount
-        sqlCmd.Parameters.AddWithValue("@seniorAmount", CDbl(lblSCGross.Text))
-        sqlCmd.Parameters("@seniorAmount").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@amount", CDbl(lblSCGross.Text))
+        sqlCmd.Parameters("@amount").Direction = ParameterDirection.Input
         'Less VAT
         sqlCmd.Parameters.AddWithValue("@lessVAT", (((lblGross.Text / lblCustNo.Text) * txtSCcount.Text) / 1.12) * 0.12)
         sqlCmd.Parameters("@lessVAT").Direction = ParameterDirection.Input
