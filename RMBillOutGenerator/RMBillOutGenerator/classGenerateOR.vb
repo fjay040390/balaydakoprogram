@@ -119,17 +119,17 @@ Public Class classGenerateOR
         sqlCmd.Parameters("@tableNo").Direction = ParameterDirection.Output
         sqlCmd.Parameters.Add("@custCount", MySqlDbType.Int16)
         sqlCmd.Parameters("@custCount").Direction = ParameterDirection.Output
-        sqlCmd.Parameters.Add("@seniorID", MySqlDbType.String)
-        sqlCmd.Parameters("@seniorID").Direction = ParameterDirection.Output
-        sqlCmd.Parameters.Add("@seniorName", MySqlDbType.String)
-        sqlCmd.Parameters("@seniorName").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@id", MySqlDbType.String)
+        sqlCmd.Parameters("@id").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@cName", MySqlDbType.String)
+        sqlCmd.Parameters("@cName").Direction = ParameterDirection.Output
         sqlCmd.ExecuteNonQuery()
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         Cashier = sqlCmd.Parameters("@empName").Value.ToString
         TableNo = sqlCmd.Parameters("@tableNo").Value.ToString
         CustNo = sqlCmd.Parameters("@custCount").Value.ToString
-        SeniorID = sqlCmd.Parameters("@seniorID").Value.ToString
-        SeniorName = sqlCmd.Parameters("@seniorName").Value.ToString
+        SeniorID = sqlCmd.Parameters("@id").Value.ToString
+        SeniorName = sqlCmd.Parameters("@cName").Value.ToString
     End Sub
 
     Protected Sub PrintBillOut()
@@ -143,7 +143,7 @@ Public Class classGenerateOR
             PrintHeader(sw)
             .WriteLine()
             .WriteLine("****************************************")
-            .WriteLine(Space((40 - Len("BILL OUT")) / 2) & "BILL OUT")
+            .WriteLine(Space((40 - Len("SENIOR BILL OUT")) / 2) & "SENIOR BILL OUT")
             .WriteLine("****************************************")
             If isBillOut = True Then
                 .WriteLine("Bill No: " & ORNo)
@@ -184,9 +184,9 @@ Public Class classGenerateOR
                     'Sub Total Pre Tax
                     sPreTax = subTotal - vat
                     'Senior Count
-                    seniorCount = sqlDR("senior_count").ToString
+                    seniorCount = sqlDR("count").ToString
                     'Senior Amount
-                    seniorAmount = sqlDR("senior_amount").ToString
+                    seniorAmount = sqlDR("amount").ToString
                     'Senior Discount
                     seniorDiscount = sqlDR("discount").ToString
                     'Service Charge

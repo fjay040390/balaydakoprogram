@@ -1,0 +1,33 @@
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\Interop.ADODB.dll
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\Interop.ADOR.dll
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOut.Form1.resources
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOut.Resources.resources
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.exe
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.pdb
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.xml
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.exe
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.xml
+C:\Documents and Settings\randz\Desktop\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.pdb
+C:\Documents and Settings\randz\Desktop\Receipt Program\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\Interop.ADODB.dll
+C:\Documents and Settings\randz\Desktop\Receipt Program\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\Interop.ADOR.dll
+C:\Documents and Settings\randz\Desktop\Receipt Program\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Documents and Settings\randz\Desktop\Receipt Program\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.exe
+C:\Documents and Settings\randz\Desktop\Receipt Program\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.xml
+C:\Documents and Settings\randz\Desktop\Receipt Program\MESA Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.pdb
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.exe
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.pdb
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.xml
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\Interop.ADODB.dll
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\Interop.ADOR.dll
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.vbproj.ResolveComReference.cache
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOut.Form1.resources
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOut.Resources.resources
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.vbproj.GenerateResource.Cache
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.exe
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.xml
+C:\Office Files\FinalizedPrograms\Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\obj\x86\Debug\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.pdb
+C:\Users\FrancisJay\Desktop\Balay Dako Receipt Program\Receipt Program\RMBillOutGenerator\RMBillOutGenerator\bin\Debug\RMBillOutGenerator.xml
