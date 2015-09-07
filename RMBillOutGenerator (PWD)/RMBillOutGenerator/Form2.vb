@@ -39,7 +39,7 @@ Public Class Form2
         'IF ALL ENTRIES ARE SUPPLIED
         If IfInputNotNull() = True Then
             If Val(lblCustNo.Text) >= Val(txtSCcount.Text) And Val(txtSCcount.Text) > 0 Then
-                CalculateDiplomat()
+                CalculatePWD()
                 btnPrint.Enabled = True
                 SetStatusText("Calculated! Ready for Print", Color.White)
                 btnPrint.Focus()
@@ -101,7 +101,7 @@ Public Class Form2
         lblTableGroup.Text = button_group
     End Sub
 
-    Sub CalculateDiplomat()
+    Sub CalculatePWD()
         Dim ORVat As Decimal = CDbl(lblGross.Text)
         Dim ORNoVat As Decimal = ORVat / 1.12
         Dim ORServiceCharge As Decimal = ORNoVat * 0.1
@@ -109,16 +109,14 @@ Public Class Form2
         Dim CustCount As Integer = CInt(lblCustNo.Text)
         Dim SRCount As Integer = CInt(txtSCcount.Text)
 
-        Dim SRAmount As Decimal = (ORVat / CustCount) * SRCount
-        Dim SRLessVAT As Decimal = (SRAmount / 1.12) * 0.12
-        'Dim SRDiscount As Decimal = (SRAmount - SRLessVAT) * 0.2
-        Dim SRDiscount As Decimal = 0
+        Dim SRAmount As Decimal = (ORNoVat / CustCount) * SRCount
+        Dim SRLessVAT As Decimal = 0
+        Dim SRDiscount As Decimal = SRAmount * 0.2
         Dim SRServChg As Decimal = (SRAmount - SRLessVAT - SRDiscount) * 0.1
         Dim SRTotal As Decimal = (SRAmount - SRLessVAT - SRDiscount) + SRServChg
 
         lblSCGross.Text = FormatNumber(SRAmount, 2)
-        'lblSCDisc.Text = FormatNumber(SRDiscount, 2)
-        lblSCDisc.Text = FormatNumber(SRLessVAT, 2)
+        lblSCDisc.Text = FormatNumber(SRDiscount, 2)
         lblServiceCharge.Text = FormatNumber(SRServChg, 2)
         lblSCTotal.Text = FormatNumber(SRTotal, 2)
     End Sub
@@ -205,10 +203,10 @@ Public Class Form2
         sqlCmd.Parameters.AddWithValue("@amount", CDbl(lblSCGross.Text))
         sqlCmd.Parameters("@amount").Direction = ParameterDirection.Input
         'Less VAT
-        sqlCmd.Parameters.AddWithValue("@lessVAT", CDbl(lblSCDisc.Text))
+        sqlCmd.Parameters.AddWithValue("@lessVAT", 0)
         sqlCmd.Parameters("@lessVAT").Direction = ParameterDirection.Input
         'Senior Discount
-        sqlCmd.Parameters.AddWithValue("@discount", 0)
+        sqlCmd.Parameters.AddWithValue("@discount", CDbl(lblSCDisc.Text))
         sqlCmd.Parameters("@discount").Direction = ParameterDirection.Input
         'Table Group
         sqlCmd.Parameters.AddWithValue("@tableGroup", lblTableGroup.Text)

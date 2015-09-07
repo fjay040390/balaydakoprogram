@@ -113,9 +113,9 @@ Partial Class Form2
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(327, 13)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(202, 20)
+        Me.Label5.Size = New System.Drawing.Size(171, 20)
         Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Table Details (Diplomat)"
+        Me.Label5.Text = "Table Details (PWD)"
         '
         'Panel2
         '
@@ -440,9 +440,9 @@ Partial Class Form2
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.Location = New System.Drawing.Point(539, 231)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(82, 20)
+        Me.Label15.Size = New System.Drawing.Size(76, 20)
         Me.Label15.TabIndex = 28
-        Me.Label15.Text = "Less VAT:"
+        Me.Label15.Text = "Discount:"
         '
         'Label13
         '
