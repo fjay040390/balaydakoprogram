@@ -39,7 +39,7 @@ Public Class Form2
         'IF ALL ENTRIES ARE SUPPLIED
         If IfInputNotNull() = True Then
             If Val(lblCustNo.Text) >= Val(txtSCcount.Text) And Val(txtSCcount.Text) > 0 Then
-                CalculateSeniorDiscount()
+                CalculateDiplomat()
                 btnPrint.Enabled = True
                 SetStatusText("Calculated! Ready for Print", Color.White)
                 btnPrint.Focus()
@@ -87,7 +87,7 @@ Public Class Form2
     End Sub
 
 #End Region
-    
+
 #Region "Sub Routines"
 
     Sub loadDetails()
@@ -101,7 +101,7 @@ Public Class Form2
         lblTableGroup.Text = button_group
     End Sub
 
-    Sub CalculateSeniorDiscount()
+    Sub CalculateDiplomat()
         Dim ORVat As Decimal = CDbl(lblGross.Text)
         Dim ORNoVat As Decimal = ORVat / 1.12
         Dim ORServiceCharge As Decimal = ORNoVat * 0.1
@@ -111,12 +111,14 @@ Public Class Form2
 
         Dim SRAmount As Decimal = (ORVat / CustCount) * SRCount
         Dim SRLessVAT As Decimal = (SRAmount / 1.12) * 0.12
-        Dim SRDiscount As Decimal = (SRAmount - SRLessVAT) * 0.2
+        'Dim SRDiscount As Decimal = (SRAmount - SRLessVAT) * 0.2
+        Dim SRDiscount As Decimal = 0
         Dim SRServChg As Decimal = (SRAmount - SRLessVAT - SRDiscount) * 0.1
         Dim SRTotal As Decimal = (SRAmount - SRLessVAT - SRDiscount) + SRServChg
 
         lblSCGross.Text = FormatNumber(SRAmount, 2)
-        lblSCDisc.Text = FormatNumber(SRDiscount, 2)
+        'lblSCDisc.Text = FormatNumber(SRDiscount, 2)
+        lblSCDisc.Text = FormatNumber(SRLessVAT, 2)
         lblServiceCharge.Text = FormatNumber(SRServChg, 2)
         lblSCTotal.Text = FormatNumber(SRTotal, 2)
     End Sub
@@ -181,14 +183,14 @@ Public Class Form2
         sqlCmd.Parameters.AddWithValue("@custCount", lblCustNo.Text)
         sqlCmd.Parameters("@custCount").Direction = ParameterDirection.Input
         'Senior Count
-        sqlCmd.Parameters.AddWithValue("@seniorCount", txtSCcount.Text)
-        sqlCmd.Parameters("@seniorCount").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@count", txtSCcount.Text)
+        sqlCmd.Parameters("@count").Direction = ParameterDirection.Input
         'Senior ID
-        sqlCmd.Parameters.AddWithValue("@seniorID", txtSCid.Text)
-        sqlCmd.Parameters("@seniorID").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@id", txtSCid.Text)
+        sqlCmd.Parameters("@id").Direction = ParameterDirection.Input
         'Senior Name
-        sqlCmd.Parameters.AddWithValue("@seniorName", txtSCname.Text)
-        sqlCmd.Parameters("@seniorName").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@cName", txtSCname.Text)
+        sqlCmd.Parameters("@cName").Direction = ParameterDirection.Input
         'Transaction Gross
         sqlCmd.Parameters.AddWithValue("@transGross", CDbl(lblGross.Text))
         sqlCmd.Parameters("@transGross").Direction = ParameterDirection.Input
@@ -200,13 +202,13 @@ Public Class Form2
         End If
         sqlCmd.Parameters("@vat").Direction = ParameterDirection.Input
         'Senior Amount
-        sqlCmd.Parameters.AddWithValue("@seniorAmount", CDbl(lblSCGross.Text))
-        sqlCmd.Parameters("@seniorAmount").Direction = ParameterDirection.Input
+        sqlCmd.Parameters.AddWithValue("@amount", CDbl(lblSCGross.Text))
+        sqlCmd.Parameters("@amount").Direction = ParameterDirection.Input
         'Less VAT
-        sqlCmd.Parameters.AddWithValue("@lessVAT", (((lblGross.Text / lblCustNo.Text) * txtSCcount.Text) / 1.12) * 0.12)
+        sqlCmd.Parameters.AddWithValue("@lessVAT", CDbl(lblSCDisc.Text))
         sqlCmd.Parameters("@lessVAT").Direction = ParameterDirection.Input
         'Senior Discount
-        sqlCmd.Parameters.AddWithValue("@discount", CDbl(lblSCDisc.Text))
+        sqlCmd.Parameters.AddWithValue("@discount", 0)
         sqlCmd.Parameters("@discount").Direction = ParameterDirection.Input
         'Table Group
         sqlCmd.Parameters.AddWithValue("@tableGroup", lblTableGroup.Text)
