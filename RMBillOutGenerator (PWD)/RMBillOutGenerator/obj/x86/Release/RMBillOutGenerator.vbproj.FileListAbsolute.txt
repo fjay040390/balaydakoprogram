@@ -116,14 +116,10 @@ C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (Diplom
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (Diplomat)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (Diplomat)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (Diplomat)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb
-C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.config
-C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.ResolveComReference.cache
-C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
-C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
-C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\receipt.mdb
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\footer.spl
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\header.spl
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.config
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe.manifest
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\RMBillOutGenerator.application
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\RMBillOutGenerator.exe
@@ -131,6 +127,7 @@ C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\R
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\RMBillOutGenerator.xml
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\MySql.Data.dll
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\bin\Release\ADODB.dll
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.vbproj.ResolveComReference.cache
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form1.resources
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOut.Form2.resources
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOut.Resources.resources
@@ -138,3 +135,6 @@ C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\R
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.TrustInfo.xml
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe.manifest
 C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.application
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.exe
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.xml
+C:\Users\FrancisJay\Documents\GitHub\balaydakoprogram\RMBillOutGenerator (PWD)\RMBillOutGenerator\obj\x86\Release\RMBillOutGenerator.pdb

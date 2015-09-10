@@ -10,6 +10,10 @@ Module Module1
 #Region "Station Variables"
     'Stations
     Public StationNum As Integer
+    'Transaction Type
+    Public Const TransType As Integer = 3 'PWD
+    'Bill Time
+    Public billTime As DateTime
 #End Region
 
 #Region "Database Variables"

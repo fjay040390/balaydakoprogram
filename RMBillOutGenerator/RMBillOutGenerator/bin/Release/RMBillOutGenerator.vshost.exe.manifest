@@ -66,14 +66,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RMBillOutGenerator.exe" size="70088">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RMBillOutGenerator.exe" size="70600">
       <assemblyIdentity name="RMBillOutGenerator" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>JhuE1jgxqc+pgB/3KH9tV4kI1u8=</dsig:DigestValue>
+        <dsig:DigestValue>9lDaaApDJT6XlfdDHwekAbXjIDg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

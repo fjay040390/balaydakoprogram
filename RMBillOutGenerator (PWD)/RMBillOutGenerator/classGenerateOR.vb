@@ -8,6 +8,7 @@ Public Class classGenerateOR
     Private _CustNo As String
     Private _SeniorName As String
     Private _SeniorID As String
+    Private _BillTIME As String
     Private _isBillOut As Boolean
 
     Private _fileP As String
@@ -74,6 +75,16 @@ Public Class classGenerateOR
         End Set
     End Property
 
+    Public Property BillTIME() As String
+        Get
+            Return _BillTIME
+        End Get
+
+        Set(ByVal BillTIME As String)
+            _BillTIME = BillTIME
+        End Set
+    End Property
+
     Public Property isBillOut() As Boolean
         Get
             Return _isBillOut
@@ -123,6 +134,8 @@ Public Class classGenerateOR
         sqlCmd.Parameters("@id").Direction = ParameterDirection.Output
         sqlCmd.Parameters.Add("@cName", MySqlDbType.String)
         sqlCmd.Parameters("@cName").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@billTime", MySqlDbType.String)
+        sqlCmd.Parameters("@billTime").Direction = ParameterDirection.Output
         sqlCmd.ExecuteNonQuery()
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         Cashier = sqlCmd.Parameters("@empName").Value.ToString
@@ -130,6 +143,7 @@ Public Class classGenerateOR
         CustNo = sqlCmd.Parameters("@custCount").Value.ToString
         SeniorID = sqlCmd.Parameters("@id").Value.ToString
         SeniorName = sqlCmd.Parameters("@cName").Value.ToString
+        BillTIME = sqlCmd.Parameters("@billTime").Value.ToString
     End Sub
 
     Protected Sub PrintBillOut()
@@ -143,7 +157,7 @@ Public Class classGenerateOR
             PrintHeader(sw)
             .WriteLine()
             .WriteLine("****************************************")
-            .WriteLine(Space((40 - Len("PWD BILL OUT")) / 2) & "DIPLOMAT BILL OUT")
+            .WriteLine(Space((40 - Len("PWD BILL OUT")) / 2) & "PWD BILL OUT")
             .WriteLine("****************************************")
             If isBillOut = True Then
                 .WriteLine("Bill No: " & ORNo)
@@ -151,6 +165,7 @@ Public Class classGenerateOR
                 .WriteLine("Receipt No: " & ORNo)
             End If
             .WriteLine("Table: " & TableNo)
+            .WriteLine("Bill Time: " & BillTIME)
             .WriteLine("Server:" & Cashier & Space(40 - Len("Server:" & Cashier & "Cust:" & CustNo)) & "Cust:" & CustNo)
             .WriteLine("----------------------------------------")
             'Sales Detail
@@ -211,16 +226,6 @@ Public Class classGenerateOR
             .WriteLine(Space(9) & "AMOUNT DUE:" & Space(40 - Len(Space(9) & "AMOUNT DUE:" & FormatAmount(amountDue))) & FormatAmount(amountDue))
             .WriteLine("****************************************")
             .WriteLine()
-            .WriteLine("Sales Summary")
-            .WriteLine("----------------------------------------")
-            .WriteLine(Space(9) & "VAT Sale:" & Space(40 - Len(Space(9) & "VAT Sale:" & FormatAmount((subTotal) / 1.12))) & FormatAmount((subTotal) / 1.12))
-            .WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
-            '.WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & FormatAmount(seniorAmount - lessVat))) & FormatAmount(seniorAmount - lessVat))
-            .WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & "0.00")) & "0.00")
-            .WriteLine(Space(9) & "Zero Rated:" & Space(40 - Len(Space(9) & "Zero Rated:" & "0.00")) & "0.00")
-            .WriteLine("----------------------------------------")
-            .WriteLine()
-            .WriteLine()
             .WriteLine("Signature: _____________________________")
             .WriteLine("Name     : " & SeniorName)
             .WriteLine("Senior ID: " & SeniorID)
@@ -234,6 +239,16 @@ Public Class classGenerateOR
             .WriteLine()
             .WriteLine()
             If isBillOut = False Then
+                .WriteLine("Sales Summary")
+                .WriteLine("----------------------------------------")
+                .WriteLine(Space(9) & "VAT Sale:" & Space(40 - Len(Space(9) & "VAT Sale:" & FormatAmount((subTotal) / 1.12))) & FormatAmount((subTotal) / 1.12))
+                .WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
+                '.WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & FormatAmount(seniorAmount - lessVat))) & FormatAmount(seniorAmount - lessVat))
+                .WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & "0.00")) & "0.00")
+                .WriteLine(Space(9) & "Zero Rated:" & Space(40 - Len(Space(9) & "Zero Rated:" & "0.00")) & "0.00")
+                .WriteLine("----------------------------------------")
+                .WriteLine()
+                .WriteLine()
                 PrintFooter(sw)
             End If
             .WriteLine()

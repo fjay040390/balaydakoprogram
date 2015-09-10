@@ -61,6 +61,8 @@ Public Class Form2
                 ConnectToServer()
                 'Delete all existing items at database by OR
                 DeleteItemData(lblBillNo.Text)
+                'Update Bill Out Time and Status
+                UpdateBillTimeDBF(lblBillNo.Text)
                 'Insert OR summary to database 
                 InsertSummaryData()
                 'Insert OR items to database 
@@ -69,8 +71,6 @@ Public Class Form2
                 SetStatusText("Printing...", Color.White)
                 'Print Bill Out
                 PrintBillOut()
-                'Update Bill Out Time and Status
-                UpdateBillTimeDBF(lblBillNo.Text)
                 'Update current OR (To be printed automatically by Receipt OR)
                 UpdateCurrentBillNo(lblBillNo.Text)
             Catch ex As Exception
@@ -214,6 +214,12 @@ Public Class Form2
         'Table Number
         sqlCmd.Parameters.AddWithValue("@tableNo", lblTable.Text)
         sqlCmd.Parameters("@tableNo").Direction = ParameterDirection.Input
+        'Transaction Type
+        sqlCmd.Parameters.AddWithValue("@transType", TransType)
+        sqlCmd.Parameters("@transType").Direction = ParameterDirection.Input
+        'Bill Time
+        sqlCmd.Parameters.AddWithValue("@billTime", billTime)
+        sqlCmd.Parameters("@billTime").Direction = ParameterDirection.Input
         'Execute Query
         sqlCmd.ExecuteNonQuery()
     End Sub
@@ -229,7 +235,7 @@ Public Class Form2
                                    .Fields(1).Value,
                                    .Fields(2).Value,
                                    .Fields(3).Value,
-                                   ((((.Fields(2).Value * .Fields(3).Value) / lblCustNo.Text) * txtSCcount.Text) / 1.12) * 0.12,
+                                   0,
                                    ((((.Fields(2).Value * .Fields(3).Value) / lblCustNo.Text) * txtSCcount.Text) / 1.12) * 0.2
                                    )
                     .MoveNext()
@@ -237,6 +243,7 @@ Public Class Form2
             End If
         End With
         closeDBFconnection()
+        '((((.Fields(2).Value * .Fields(3).Value) / lblCustNo.Text) * txtSCcount.Text) / 1.12) * 0.12
     End Sub
 
     Sub LoadPaymentDataFromPOS(ByVal orNo As String)
@@ -344,8 +351,9 @@ Public Class Form2
     End Sub
 
     Sub UpdateBillTimeDBF(ByVal orNo As String)
+        billTime = Format(TimeOfDay, "HH:mm:ss")
         openDBFconnection()
-        rs = con.Execute("Update SLS" & date_sfx & " set BILL_TIME ='" & Format(TimeOfDay, "HH:mm:ss") & _
+        rs = con.Execute("Update SLS" & date_sfx & " set BILL_TIME ='" & Format(billTime, "HH:mm:ss") & _
                          "', BILL_DATE = '" & Format(Today, "MM/dd/yyyy") & "', PRINTED = TRUE where bill_no = " & orNo)
         closeDBFconnection()
     End Sub
@@ -362,6 +370,7 @@ Public Class Form2
         generateOR.Cashier = lblCashier.Text
         generateOR.SeniorID = txtSCid.Text
         generateOR.SeniorName = txtSCname.Text
+        generateOR.BillTIME = billTime
         generateOR.isBillOut = True
         generateOR.fileP = pos_printer_path
         generateOR.Print()
