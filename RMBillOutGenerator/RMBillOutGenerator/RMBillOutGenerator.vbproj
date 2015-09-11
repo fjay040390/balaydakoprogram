@@ -8,9 +8,9 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{858D4AB9-02CB-483F-AB38-834BE239858B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>RMBillOut.My.MyApplication</StartupObject>
-    <RootNamespace>RMBillOut</RootNamespace>
-    <AssemblyName>RMBillOutGenerator</AssemblyName>
+    <StartupObject>RMSenior.My.MyApplication</StartupObject>
+    <RootNamespace>RMSenior</RootNamespace>
+    <AssemblyName>RMSenior</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -40,7 +40,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>RMBillOutGenerator.xml</DocumentationFile>
+    <DocumentationFile>RMSenior.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -50,7 +50,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>RMBillOutGenerator.xml</DocumentationFile>
+    <DocumentationFile>RMSenior.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
