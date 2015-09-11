@@ -102,12 +102,8 @@ Module Module1
     End Sub
 
     Public Sub checkStation()
-        Dim statNum As String
-        Dim readStatNum As New StreamReader("c:\balay\stat.txt")
-        statNum = readStatNum.ReadToEnd
-        If statNum = "1" Then StationNum = 1
-        If statNum = "2" Then StationNum = 2
-        If statNum = "3" Then StationNum = 3
+        StationNum = GetStationNum()
+        date_sfx = GetDateSuffix()
     End Sub
 
     Public Sub LoadConfig()
@@ -172,33 +168,16 @@ Module Module1
 
 #Region "Station Registry"
 
-    Public Sub RegisterStationNum(ByVal statNum As Integer)
-        Dim regKey As RegistryKey
-        'Open Registry Key
-        regKey = My.Computer.Registry.CurrentUser.OpenSubKey("SOFTWARE\StationNumber", True)
-        'Set Value for Registry Key
-        regKey.SetValue("statNum", statNum)
-        regKey.Close()
-    End Sub
-
-    Public Function CheckIfStationRegistryExists() As Boolean
-        Dim RegKey As RegistryKey
-        RegKey = My.Computer.Registry.CurrentUser.OpenSubKey("SOFTWARE", True)
-        'Create Registry Key for Station Number at LocalMachine
-        My.Computer.Registry.CurrentUser.CreateSubKey("SOFTWARE\StationNumber")
-        'Check if Registry Value Exists
-        If My.Computer.Registry.GetValue("HKEY_CURRENT_USER\Software\StationNumber", "statnum", Nothing) Is Nothing Then
-            Return False
-        Else
-            Return True
-        End If
-        RegKey.Close()
-    End Function
-
     Public Function GetStationNum() As Integer
-        Dim statNum = My.Computer.Registry.GetValue("HKEY_CURRENT_USER\Software\StationNumber", "statnum", Nothing)
+        Dim statNum = My.Computer.Registry.GetValue("HKEY_CURRENT_USER\Software\RM", "statNum", Nothing)
         Return statNum
     End Function
+
+    Public Function GetDateSuffix() As String
+        Dim date_sfx = My.Computer.Registry.GetValue("HKEY_CURRENT_USER\Software\RM", "date_suffx", Nothing)
+        Return date_sfx
+    End Function
+
 #End Region
 
 End Module

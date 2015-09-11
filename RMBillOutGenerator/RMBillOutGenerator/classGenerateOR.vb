@@ -190,35 +190,22 @@ Public Class classGenerateOR
             sqlDR = sqlCmd.ExecuteReader()
             If sqlDR.HasRows Then
                 While sqlDR.Read
-                    'Sub Total
                     subTotal = sqlDR("trans_gross").ToString
-                    'less VAT
                     lessVat = sqlDR("less_vat").ToString
-                    'Vat
                     vat = sqlDR("vat").ToString
-                    'Sub Total Pre Tax
                     sPreTax = subTotal - vat
-                    'Senior Count
                     seniorCount = sqlDR("count").ToString
-                    'Senior Amount
                     seniorAmount = sqlDR("amount").ToString
-                    'Senior Discount
                     seniorDiscount = sqlDR("discount").ToString
-                    'Service Charge
                     serviceCharge = (sPreTax - seniorDiscount) * 0.1
-                    'Amount Due
                     amountDue = (subTotal - seniorDiscount) + serviceCharge
                 End While
             End If
             sqlDR.Close()
             .WriteLine()
             .WriteLine(Space(9) & "Sub Total:" & Space(40 - Len(Space(9) & "Sub Total:" & FormatAmount(subTotal))) & FormatAmount(subTotal))
-            '.WriteLine(Space(9) & "Less VAT:" & Space(39 - Len(Space(9) & "Less VAT" & FormatAmount(vat * -1))) & FormatAmount(vat * -1))
-            '.WriteLine(Space(9) & "Sub Total Pre Tax:" & Space(40 - Len(Space(9) & "Sub Total Pre Tax:" & FormatAmount(sPreTax))) & FormatAmount(sPreTax))
             .WriteLine(Space(9) & "Senior Discount" & "(" & seniorCount & "):" & Space(40 - Len(Space(9) & "Senior Discount" & "(" & seniorCount & "):" & FormatAmount(seniorDiscount * -1))) & FormatAmount(seniorDiscount * -1))
-            '.WriteLine(Space(9) & "Senior Less VAT" & "(" & seniorCount & "):" & Space(40 - Len(Space(9) & "Senior Less VAT" & "(" & seniorCount & "):" & FormatAmount(lessVat * -1))) & FormatAmount(lessVat * -1))
             .WriteLine(Space(9) & "Service Charge:" & Space(40 - Len(Space(9) & "Service Charge:" & FormatAmount(serviceCharge))) & FormatAmount(serviceCharge))
-            '.WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
             .WriteLine()
             .WriteLine("****************************************")
             .WriteLine(Space(9) & "AMOUNT DUE:" & Space(40 - Len(Space(9) & "AMOUNT DUE:" & FormatAmount(amountDue))) & FormatAmount(amountDue))

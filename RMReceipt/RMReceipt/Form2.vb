@@ -11,7 +11,6 @@ Public Class Form2
     Sub PrintReceipt()
         Try
             ConnectToServer()
-            'checkStation()
             LoadConfig()
             GetBill()
             UpdateCurrentBillNo(0)

@@ -109,7 +109,7 @@ Public Class Form2
         Dim CustCount As Integer = CInt(lblCustNo.Text)
         Dim SRCount As Integer = CInt(txtSCcount.Text)
 
-        Dim SRAmount As Decimal = (ORNoVat / CustCount) * SRCount
+        Dim SRAmount As Decimal = (ORVat / CustCount) * SRCount
         Dim SRLessVAT As Decimal = 0
         Dim SRDiscount As Decimal = SRAmount * 0.2
         Dim SRServChg As Decimal = (SRAmount - SRLessVAT - SRDiscount) * 0.1

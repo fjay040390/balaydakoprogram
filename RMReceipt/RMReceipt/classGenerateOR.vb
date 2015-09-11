@@ -3,17 +3,20 @@
 Public Class classGenerateOR
 
     Private _OR As String
-    Private _TableNo As String
-    Private _Cashier As String
-    Private _CustNo As String
-    Private _SeniorName As String
-    Private _SeniorID As String
+    Private TableNo As String
+    Private Cashier As String
+    Private CustNo As String
+    Private SeniorName As String
+    Private SeniorID As String
+    Private SettleTIME As String
+    Private TransType As Integer
     Private _isBillOut As Boolean
 
     Private _fileP As String
     Private Const fileN As String = "BillOR.spl"
 
 #Region "Properties"
+
     Public Property ORNo() As String
         Get
             Return _OR
@@ -21,56 +24,6 @@ Public Class classGenerateOR
 
         Set(ByVal ORNo As String)
             _OR = ORNo
-        End Set
-    End Property
-
-    Public Property TableNo() As String
-        Get
-            Return _TableNo
-        End Get
-
-        Set(ByVal TableNo As String)
-            _TableNo = TableNo
-        End Set
-    End Property
-
-    Public Property Cashier() As String
-        Get
-            Return _Cashier
-        End Get
-
-        Set(ByVal Cashier As String)
-            _Cashier = Cashier
-        End Set
-    End Property
-
-    Public Property CustNo() As String
-        Get
-            Return _CustNo
-        End Get
-
-        Set(ByVal CustNo As String)
-            _CustNo = CustNo
-        End Set
-    End Property
-
-    Public Property SeniorName() As String
-        Get
-            Return _SeniorName
-        End Get
-
-        Set(ByVal SeniorName As String)
-            _SeniorName = SeniorName
-        End Set
-    End Property
-
-    Public Property SeniorID() As String
-        Get
-            Return _SeniorID
-        End Get
-
-        Set(ByVal SeniorID As String)
-            _SeniorID = SeniorID
         End Set
     End Property
 
@@ -109,7 +62,7 @@ Public Class classGenerateOR
     End Function
 
     Protected Sub getParamValues()
-        sqlCmd = New MySqlCommand("getDatabyOR", sqlCon)
+        sqlCmd = New MySqlCommand("getDatabyORSTL", sqlCon)
         sqlCmd.CommandType = CommandType.StoredProcedure
         sqlCmd.Parameters.AddWithValue("@orNo", ORNo)
         sqlCmd.Parameters("@orNo").Direction = ParameterDirection.Input
@@ -117,19 +70,25 @@ Public Class classGenerateOR
         sqlCmd.Parameters("@empName").Direction = ParameterDirection.Output
         sqlCmd.Parameters.Add("@tableNo", MySqlDbType.Int16)
         sqlCmd.Parameters("@tableNo").Direction = ParameterDirection.Output
-        sqlCmd.Parameters.Add("@custCount", MySqlDbType.Int16)
-        sqlCmd.Parameters("@custCount").Direction = ParameterDirection.Output
-        sqlCmd.Parameters.Add("@seniorID", MySqlDbType.String)
-        sqlCmd.Parameters("@seniorID").Direction = ParameterDirection.Output
-        sqlCmd.Parameters.Add("@seniorName", MySqlDbType.String)
-        sqlCmd.Parameters("@seniorName").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@count", MySqlDbType.Int16)
+        sqlCmd.Parameters("@count").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@custID", MySqlDbType.String)
+        sqlCmd.Parameters("@custID").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@custName", MySqlDbType.String)
+        sqlCmd.Parameters("@custName").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@settleTIME", MySqlDbType.String)
+        sqlCmd.Parameters("@settleTIME").Direction = ParameterDirection.Output
+        sqlCmd.Parameters.Add("@transType", MySqlDbType.String)
+        sqlCmd.Parameters("@transType").Direction = ParameterDirection.Output
         sqlCmd.ExecuteNonQuery()
         ''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
         Cashier = sqlCmd.Parameters("@empName").Value.ToString
         TableNo = sqlCmd.Parameters("@tableNo").Value.ToString
-        CustNo = sqlCmd.Parameters("@custCount").Value.ToString
-        SeniorID = sqlCmd.Parameters("@seniorID").Value.ToString
-        SeniorName = sqlCmd.Parameters("@seniorName").Value.ToString
+        CustNo = sqlCmd.Parameters("@count").Value.ToString
+        SeniorID = sqlCmd.Parameters("@custID").Value.ToString
+        SeniorName = sqlCmd.Parameters("@custName").Value.ToString
+        SettleTIME = sqlCmd.Parameters("@settleTIME").Value.ToString
+        TransType = sqlCmd.Parameters("@transType").Value.ToString
     End Sub
 
     Protected Sub PrintBillOut()
@@ -140,13 +99,15 @@ Public Class classGenerateOR
         Dim subTotal, sPreTax, lessVat, seniorDiscount, serviceCharge, vat, amountDue, seniorAmount As Decimal
         Dim seniorCount As Integer
         With sw
-            .WriteLine(Space((40 - Len("BALAY DAKO")) / 2) & "BALAY DAKO")
-            .WriteLine(Space((40 - Len("TAGAYTAY CITY")) / 2) & "TAGAYTAY CITY")
-            .WriteLine(Space((40 - Len("Tel. (02) xxx-xxxx")) / 2) & "Tel. (02) xxx-xxxx")
-            .WriteLine(Space((40 - Len("TIN  008-524-024-000 VAT")) / 2) & "TIN  008-524-024-000 VAT")
-            .WriteLine()
+            PrintHeader(sw)
             .WriteLine("****************************************")
-            .WriteLine(Space((40 - Len("OFFICIAL RECEIPT")) / 2) & "OFFICIAL RECEIPT")
+            If TransType = 1 Then
+                .WriteLine(Space((40 - Len("SENIOR CITIZEN")) / 2) & "SENIOR CITIZEN")
+            ElseIf TransType = 2 Then
+                .WriteLine(Space((40 - Len("DIPLOMAT")) / 2) & "DIPLOMAT")
+            ElseIf TransType = 3 Then
+                .WriteLine(Space((40 - Len("PWD")) / 2) & "PWD")
+            End If
             .WriteLine("****************************************")
             If isBillOut = True Then
                 .WriteLine("Bill No: " & ORNo)
@@ -154,12 +115,12 @@ Public Class classGenerateOR
                 .WriteLine("Receipt No: " & ORNo)
             End If
             .WriteLine("Table: " & TableNo)
+            .WriteLine("Settle Time: " & SettleTIME)
             .WriteLine("Server:" & Cashier & Space(40 - Len("Server:" & Cashier & "Cust:" & CustNo)) & "Cust:" & CustNo)
             .WriteLine("----------------------------------------")
             'Sales Detail
             sqlCmd = New MySqlCommand("Select * from sales_detail where or_no = " & ORNo, sqlCon)
             sqlDR = sqlCmd.ExecuteReader()
-
             If sqlDR.HasRows Then
                 While sqlDR.Read
                     qty = FormatNumber(sqlDR(3).ToString, 2)
@@ -178,42 +139,60 @@ Public Class classGenerateOR
             sqlDR = sqlCmd.ExecuteReader()
             If sqlDR.HasRows Then
                 While sqlDR.Read
-                    'Sub Total
-                    subTotal = sqlDR("trans_gross").ToString
-                    'less VAT
-                    lessVat = sqlDR("less_vat").ToString
-                    'Vat
-                    vat = sqlDR("vat").ToString
-                    'Sub Total Pre Tax
-                    sPreTax = subTotal - vat
-                    'Senior Count
-                    seniorCount = sqlDR("senior_count").ToString
-                    'Senior Amount
-                    seniorAmount = sqlDR("senior_amount").ToString
-                    'Senior Discount
-                    seniorDiscount = sqlDR("discount").ToString
-                    'Service Charge
-                    serviceCharge = (sPreTax - seniorDiscount) * 0.1
-                    'Amount Due
-                    amountDue = (subTotal - seniorDiscount) + serviceCharge
+                    If TransType = 1 Then
+                        subTotal = sqlDR("trans_gross").ToString
+                        lessVat = sqlDR("less_vat").ToString
+                        vat = sqlDR("vat").ToString
+                        sPreTax = subTotal - vat
+                        seniorCount = sqlDR("count").ToString
+                        seniorAmount = sqlDR("amount").ToString
+                        seniorDiscount = sqlDR("discount").ToString
+                        serviceCharge = (sPreTax - seniorDiscount) * 0.1
+                        amountDue = (subTotal - seniorDiscount) + serviceCharge
+                    ElseIf TransType = 2 Then
+                        subTotal = sqlDR("trans_gross").ToString
+                        lessVat = sqlDR("less_vat").ToString
+                        vat = sqlDR("vat").ToString
+                        sPreTax = subTotal - vat
+                        seniorCount = sqlDR("count").ToString
+                        seniorAmount = sqlDR("amount").ToString
+                        seniorDiscount = sqlDR("discount").ToString
+                        serviceCharge = (sPreTax - lessVat) * 0.1
+                        amountDue = (subTotal - lessVat) + serviceCharge
+                    ElseIf TransType = 3 Then
+                        subTotal = sqlDR("trans_gross").ToString
+                        lessVat = sqlDR("less_vat").ToString
+                        vat = sqlDR("vat").ToString
+                        sPreTax = subTotal - vat
+                        seniorCount = sqlDR("count").ToString
+                        seniorAmount = sqlDR("amount").ToString
+                        seniorDiscount = sqlDR("discount").ToString
+                        serviceCharge = (sPreTax - seniorDiscount) * 0.1
+                        amountDue = (subTotal - seniorDiscount) + serviceCharge
+                    End If
                 End While
             End If
             sqlDR.Close()
             .WriteLine()
-            .WriteLine(Space(9) & "Sub Total:" & Space(40 - Len(Space(9) & "Sub Total:" & FormatAmount(subTotal))) & FormatAmount(subTotal))
-            '.WriteLine(Space(9) & "Less VAT:" & Space(39 - Len(Space(9) & "Less VAT" & FormatAmount(vat * -1))) & FormatAmount(vat * -1))
-            '.WriteLine(Space(9) & "Sub Total Pre Tax:" & Space(40 - Len(Space(9) & "Sub Total Pre Tax:" & FormatAmount(sPreTax))) & FormatAmount(sPreTax))
-            .WriteLine(Space(9) & "Senior Discount" & "(" & seniorCount & "):" & Space(40 - Len(Space(9) & "Senior Discount" & "(" & seniorCount & "):" & FormatAmount(seniorDiscount * -1))) & FormatAmount(seniorDiscount * -1))
-            '.WriteLine(Space(9) & "Senior Less VAT" & "(" & seniorCount & "):" & Space(40 - Len(Space(9) & "Senior Less VAT" & "(" & seniorCount & "):" & FormatAmount(lessVat * -1))) & FormatAmount(lessVat * -1))
-            .WriteLine(Space(9) & "Service Charge:" & Space(40 - Len(Space(9) & "Service Charge:" & FormatAmount(serviceCharge))) & FormatAmount(serviceCharge))
-            '.WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
+            If TransType = 1 Then
+                .WriteLine(Space(9) & "Sub Total:" & Space(40 - Len(Space(9) & "Sub Total:" & FormatAmount(subTotal))) & FormatAmount(subTotal))
+                .WriteLine(Space(9) & "Senior Discount" & "(" & seniorCount & "):" & Space(40 - Len(Space(9) & "Senior Discount" & "(" & seniorCount & "):" & FormatAmount(seniorDiscount * -1))) & FormatAmount(seniorDiscount * -1))
+                .WriteLine(Space(9) & "Service Charge:" & Space(40 - Len(Space(9) & "Service Charge:" & FormatAmount(serviceCharge))) & FormatAmount(serviceCharge))
+            ElseIf TransType = 2 Then
+                .WriteLine(Space(9) & "Sub Total:" & Space(40 - Len(Space(9) & "Sub Total:" & FormatAmount(subTotal))) & FormatAmount(subTotal))
+                .WriteLine(Space(9) & "Less VAT:" & "(" & seniorCount & "):" & Space(39 - Len(Space(9) & "Less VAT" & "(" & seniorCount & "):" & FormatAmount(lessVat * -1))) & FormatAmount(lessVat * -1))
+                .WriteLine(Space(9) & "Service Charge:" & Space(40 - Len(Space(9) & "Service Charge:" & FormatAmount(serviceCharge))) & FormatAmount(serviceCharge))
+            ElseIf TransType = 3 Then
+                .WriteLine(Space(9) & "Sub Total:" & Space(40 - Len(Space(9) & "Sub Total:" & FormatAmount(subTotal))) & FormatAmount(subTotal))
+                .WriteLine(Space(9) & "PWD Discount" & "(" & seniorCount & "):" & Space(40 - Len(Space(9) & "PWD Discount" & "(" & seniorCount & "):" & FormatAmount(seniorDiscount * -1))) & FormatAmount(seniorDiscount * -1))
+                .WriteLine(Space(9) & "Service Charge:" & Space(40 - Len(Space(9) & "Service Charge:" & FormatAmount(serviceCharge))) & FormatAmount(serviceCharge))
+            End If
             .WriteLine()
             .WriteLine("****************************************")
             .WriteLine(Space(9) & "AMOUNT DUE:" & Space(40 - Len(Space(9) & "AMOUNT DUE:" & FormatAmount(amountDue))) & FormatAmount(amountDue))
             .WriteLine("****************************************")
             .WriteLine()
             .WriteLine()
-
             openDBFconnection()
             Dim rs As ADODB.Recordset
             Dim cashBack As String
@@ -226,41 +205,54 @@ Public Class classGenerateOR
             End While
             .WriteLine("CHANGE:" & Space(40 - Len("CHANGE:" & FormatNumber(cashBack, 2))) & FormatNumber(cashBack, 2))
             closeDBFconnection()
-
-            .WriteLine()
-            .WriteLine()
-            .WriteLine("Sales Summary")
-            .WriteLine("----------------------------------------")
-            .WriteLine(Space(9) & "VAT Sale:" & Space(40 - Len(Space(9) & "VAT Sale:" & FormatAmount((subTotal - seniorAmount) / 1.12))) & FormatAmount((subTotal - seniorAmount) / 1.12))
-            .WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
-            .WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & FormatAmount(seniorAmount))) & FormatAmount(seniorAmount))
-            .WriteLine(Space(9) & "Zero Rated:" & Space(40 - Len(Space(9) & "Zero Rated:" & "0.00")) & "0.00")
-            .WriteLine("----------------------------------------")
             .WriteLine()
             .WriteLine()
             .WriteLine("Signature: _____________________________")
             .WriteLine("Name     : " & SeniorName)
-            .WriteLine("Senior ID: " & SeniorID)
-            While seniorCount > 0
+            If TransType = 1 Then
+                .WriteLine("Senior ID: " & SeniorID)
+            ElseIf TransType = 2 Then
+                .WriteLine("Diplomat: " & SeniorID)
+            ElseIf TransType = 3 Then
+                .WriteLine("PWD: " & SeniorID)
+            End If
+            While seniorCount > 1
                 .WriteLine()
                 .WriteLine("Signature: _____________________________")
                 .WriteLine("Name     : ")
-                .WriteLine("Senior ID: ")
+                If TransType = 1 Then
+                    .WriteLine("Senior ID: " & SeniorID)
+                ElseIf TransType = 2 Then
+                    .WriteLine("Diplomat: " & SeniorID)
+                ElseIf TransType = 3 Then
+                    .WriteLine("PWD: " & SeniorID)
+                End If
                 seniorCount -= 1
             End While
             .WriteLine()
             .WriteLine()
-            If isBillOut = False Then
-                .WriteLine(Space((40 - Len("MIN: 15052511205400030")) / 2) & "MIN: 15052511205400030")
-                .WriteLine(Space((40 - Len("Serial No: WMC3F1730294")) / 2) & "Serial No: WMC3F1730294")
-                .WriteLine(Space((40 - Len("Y80414B00310")) / 2) & "Y80414B00310")
-                .WriteLine(Space((40 - Len("Y80414B00304")) / 2) & "Y80414B00304")
-                .WriteLine(Space((40 - Len("Y80414B00345")) / 2) & "Y80414B00345")
-                .WriteLine(Space((40 - Len("Permit No: FP052015-54A-0034569-00000")) / 2) & "Permit No: FP052015-54A-0034569-00000")
-                .WriteLine(Space((40 - Len("Accr No:05000824300300057870683")) / 2) & "Accr No:05000824300300057870683")
-                .WriteLine(Space((40 - Len("This serves as your Official Receipt")) / 2) & "This serves as your Official Receipt")
-                .WriteLine(Space((40 - Len("Thank you for visiting us")) / 2) & "Thank you for visiting us")
+            .WriteLine("Sales Summary")
+            .WriteLine("----------------------------------------")
+            If TransType = 1 Then
+                .WriteLine(Space(9) & "VAT Sale:" & Space(40 - Len(Space(9) & "VAT Sale:" & FormatAmount((subTotal - seniorAmount) / 1.12))) & FormatAmount((subTotal - seniorAmount) / 1.12))
+                .WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
+                .WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & FormatAmount(seniorAmount))) & FormatAmount(seniorAmount))
+                .WriteLine(Space(9) & "Zero Rated:" & Space(40 - Len(Space(9) & "Zero Rated:" & "0.00")) & "0.00")
+            ElseIf TransType = 2 Then
+                .WriteLine(Space(9) & "VAT Sale:" & Space(40 - Len(Space(9) & "VAT Sale:" & FormatAmount((subTotal - seniorAmount) / 1.12))) & FormatAmount((subTotal - seniorAmount) / 1.12))
+                .WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
+                .WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & "0.00")) & "0.00")
+                .WriteLine(Space(9) & "Zero Rated:" & Space(40 - Len(Space(9) & "Zero Rated:" & FormatAmount(seniorAmount - lessVat))) & FormatAmount(seniorAmount - lessVat))
+            ElseIf TransType = 3 Then
+                .WriteLine(Space(9) & "VAT Sale:" & Space(40 - Len(Space(9) & "VAT Sale:" & FormatAmount((subTotal) / 1.12))) & FormatAmount((subTotal) / 1.12))
+                .WriteLine(Space(9) & "12% VAT:" & Space(40 - Len(Space(9) & "12% VAT:" & FormatAmount(vat - lessVat))) & FormatAmount(vat - lessVat))
+                .WriteLine(Space(9) & "VAT Exempt Sales:" & Space(40 - Len(Space(9) & "VAT Exempt Sales:" & "0.00")) & "0.00")
+                .WriteLine(Space(9) & "Zero Rated:" & Space(40 - Len(Space(9) & "Zero Rated:" & "0.00")) & "0.00")
             End If
+            .WriteLine("----------------------------------------")
+            .WriteLine()
+            .WriteLine()
+            PrintFooter(sw)
             .WriteLine()
             .WriteLine()
             .WriteLine()
@@ -270,4 +262,25 @@ Public Class classGenerateOR
         End With
     End Sub
 
+    Protected Sub PrintHeader(ByVal mainSW As System.IO.StreamWriter)
+        Dim headerSW As New System.IO.StreamReader(Application.StartupPath & "\header.spl")
+        Dim headerSTR As String
+        Do While headerSW.Peek
+            headerSTR = headerSW.ReadLine()
+            If headerSTR = Nothing Then Exit Do
+            mainSW.WriteLine(Space((40 - Len(headerSTR)) / 2) & headerSTR)
+        Loop
+        headerSW.Close()
+    End Sub
+
+    Protected Sub PrintFooter(ByVal mainSW As System.IO.StreamWriter)
+        Dim headerSW As New System.IO.StreamReader(Application.StartupPath & "\footer.spl")
+        Dim headerSTR As String
+        Do While headerSW.Peek
+            headerSTR = headerSW.ReadLine()
+            If headerSTR = Nothing Then Exit Do
+            mainSW.WriteLine(Space((40 - Len(headerSTR)) / 2) & headerSTR)
+        Loop
+        headerSW.Close()
+    End Sub
 End Class
