@@ -198,13 +198,15 @@ Public Class classGenerateOR
             Dim cashBack As String
             rs = con.Execute("Select a.RECEIVED, a.CASH_BACK, b.TPAGO_NAME from PMT" & date_sfx & _
                              " a LEFT JOIN TIPOPAG b on a.PAY_TYPE = b.TPAGO_NO where a.bill_no=" & ORNo)
-            While Not rs.EOF
-                .WriteLine(rs.Fields(2).Value & Space(40 - Len(rs.Fields(2).Value & FormatNumber(rs.Fields(0).Value, 2))) & FormatNumber(rs.Fields(0).Value, 2))
-                cashBack = rs.Fields(1).Value
-                rs.MoveNext()
-            End While
-            .WriteLine("CHANGE:" & Space(40 - Len("CHANGE:" & FormatNumber(cashBack, 2))) & FormatNumber(cashBack, 2))
-            closeDBFconnection()
+            If Not rs.EOF Then
+                While Not rs.EOF
+                    .WriteLine(rs.Fields(2).Value & Space(40 - Len(rs.Fields(2).Value & FormatNumber(rs.Fields(0).Value, 2))) & FormatNumber(rs.Fields(0).Value, 2))
+                    cashBack = rs.Fields(1).Value
+                    rs.MoveNext()
+                End While
+                .WriteLine("CHANGE:" & Space(40 - Len("CHANGE:" & FormatNumber(cashBack, 2))) & FormatNumber(cashBack, 2))
+                closeDBFconnection()
+            End If
             .WriteLine()
             .WriteLine()
             .WriteLine("Signature: _____________________________")
@@ -212,9 +214,9 @@ Public Class classGenerateOR
             If TransType = 1 Then
                 .WriteLine("Senior ID: " & SeniorID)
             ElseIf TransType = 2 Then
-                .WriteLine("Diplomat: " & SeniorID)
+                .WriteLine("Diplomat : " & SeniorID)
             ElseIf TransType = 3 Then
-                .WriteLine("PWD: " & SeniorID)
+                .WriteLine("PWD      : " & SeniorID)
             End If
             While seniorCount > 1
                 .WriteLine()
@@ -223,9 +225,9 @@ Public Class classGenerateOR
                 If TransType = 1 Then
                     .WriteLine("Senior ID: " & SeniorID)
                 ElseIf TransType = 2 Then
-                    .WriteLine("Diplomat: " & SeniorID)
+                    .WriteLine("Diplomat : " & SeniorID)
                 ElseIf TransType = 3 Then
-                    .WriteLine("PWD: " & SeniorID)
+                    .WriteLine("PWD      : " & SeniorID)
                 End If
                 seniorCount -= 1
             End While
